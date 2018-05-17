@@ -47,7 +47,7 @@ include './fun/admin.php';
             Api req 
         </div>
         <div class="card-body">
-            <h3>6969</h3>
+            <h3>6969 req</h3>
         </div>
         </div>
     </div> 
