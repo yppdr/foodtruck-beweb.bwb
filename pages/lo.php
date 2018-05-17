@@ -9,6 +9,39 @@ include './fun/public.php';
 
 <?php
 
+if ($_SESSION) {
+    ?>
+
+    <div class="col p-3">
+        <div class="card text-center ">
+                <div class="card-header">
+                   Add un truc poto !
+                </div>
+                <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="content">Genre la :D</label>
+                        <input type="text" class="form-control" id="content" name="content" placeholder="Ici la !">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+                
+        </div>
+
+    </div>
+
+    <?php
+}else{
+    ?>
+<div class="alert alert-primary" role="alert">
+  Tu doit etre co pour add un truc poto !
+</div>
+    <?php
+}
+
+
+
 foreach (get_lo('ORDER BY id DESC') as $key ) {
 
     ?>
