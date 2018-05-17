@@ -9,7 +9,7 @@ include './fun/public.php';
 
 <?php
 
-foreach (get_lo() as $key ) {
+foreach (get_lo('ORDER BY id DESC') as $key ) {
 
     ?>
 
