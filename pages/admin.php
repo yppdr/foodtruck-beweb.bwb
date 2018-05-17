@@ -15,24 +15,48 @@ include './fun/admin.php';
           <h1 class="pb-3 mb-4 border-bottom"><i class="fa fa-gavel" aria-hidden="true"></i> Administration </h1>
 
 <div class="row">
+
+
     <div class="col-md-4">
-        <div class="card">
+        <div class="card text-center">
         <div class="card-header">
             Users 
         </div>
         <div class="card-body">
-            
+            <h3><?= count(get_users()); ?></h3>
         </div>
         </div>
     </div>
+
+    <div class="col-md-4">
+        <div class="card text-center">
+        <div class="card-header">
+            Post sur le sleeping book 
+        </div>
+        <div class="card-body">
+            <h3><?= count(get_lo()); ?></h3>
+        </div>
+        </div>
+    </div> 
+
+    <div class="col-md-4">
+        <div class="card text-center">
+        <div class="card-header">
+            Api req 
+        </div>
+        <div class="card-body">
+            <h3>6969</h3>
+        </div>
+        </div>
+    </div> 
+
 <pre>
 <?php
-
-echo count(get_users());
-
-foreach(get_users() as $v){
-    echo $v["username"] . "\n";
-}
+/** 
+*foreach(get_users() as $v){
+*    echo $v["username"] . "\n";
+*}
+*/
 
 ?>
 </pre>
