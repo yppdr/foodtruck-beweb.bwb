@@ -6,7 +6,7 @@ session_start();
 
 
 
-require 'lib/password.php';
+require 'lib/psw.php';
 
 include './fun/config.php';;
 
@@ -36,7 +36,7 @@ if(isset($_POST['login'])){
         $_SESSION['flash'] = 'Combinaison nom d\'utilisateur / mot de passe incorrecte!';
     } else{
     
-        $validPassword = password_verify($passwordAttempt, $user['password']);
+        $validPassword = verify_me($passwordAttempt, $user['password']);
         
         if($validPassword){
             $_SESSION['user_id'] = $user['id'];

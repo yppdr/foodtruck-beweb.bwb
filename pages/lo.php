@@ -2,6 +2,13 @@
 
 include './fun/public.php';
 
+if($_POST){
+    var_dump($_POST);
+    $username = $_SESSION["username"];
+    $content = $_POST["content"];
+    add_lo($username, $content);
+}
+
 ?><div class="container">
     <div class="col blog-main">
             <h1 class="pb-3 mb-4 border-bottom">Livre d'or </h1>
@@ -18,12 +25,12 @@ if ($_SESSION) {
                    Add un truc poto !
                 </div>
                 <div class="card-body">
-                <form>
+                <form method="post" action="">
                     <div class="form-group">
                         <label for="content">Genre la :D</label>
                         <input type="text" class="form-control" id="content" name="content" placeholder="Ici la !">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="sendnudes" id="sendnudes"  class="btn btn-primary" >Submit</button>
                 </form>
                 </div>
                 
