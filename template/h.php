@@ -52,8 +52,7 @@
           <a class="p-2 text-muted" href="/qsn">Qui sommes-nous</a>
           <a class="p-2 text-muted" href="/cartes">Les menus</a>
           <a class="p-2 text-danger" href="/">Où nous trouver</a>
-          <a class="p-2 text-muted" href="/lt">La team</a>          
+          <a class="p-2 text-muted" href="/lo">Livre d'or</a>          
           <a class="p-2 text-muted" href="/contact">Contact</a>
-
         </nav>
       </div>
