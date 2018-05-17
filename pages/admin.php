@@ -13,7 +13,6 @@ include './fun/admin.php';
 <div class="container">
 <div class="col blog-main">
           <h1 class="pb-3 mb-4 border-bottom"><i class="fa fa-gavel" aria-hidden="true"></i> Administration </h1>
-
 <div class="row">
 
 
