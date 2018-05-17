@@ -24,6 +24,8 @@ include './fun/admin.php';
         </div>
         <div class="card-body">
             <h3><?= count(get_users()); ?></h3>
+            <hr>
+            <h3><?= count(get_users(["is_admin"])); ?></h3>
         </div>
         </div>
     </div>
@@ -50,6 +52,17 @@ include './fun/admin.php';
         </div>
     </div> 
 
+    <div class="col p-3">
+    <div class="card text-center ">
+        <div class="card-header">
+            Geoloc mon foodtruck
+        </div>
+        <div class="card-body">
+            <button class="btn btn-block btn-info">Go !</button>
+        </div>
+        </div>
+    </div>
+
 <pre>
 <?php
 /** 
@@ -60,7 +73,6 @@ include './fun/admin.php';
 
 ?>
 </pre>
-
 
 </div>
 
