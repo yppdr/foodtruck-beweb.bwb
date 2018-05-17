@@ -23,8 +23,6 @@ include './fun/admin.php';
         </div>
         <div class="card-body">
             <h3><?= count(get_users()); ?></h3>
-            <hr>
-            <h3><?= count(get_users(["is_admin"])); ?></h3>
         </div>
         </div>
     </div>
