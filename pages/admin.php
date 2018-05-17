@@ -51,29 +51,18 @@ include './fun/admin.php';
         </div>
     </div> 
 
-    <div class="col p-3">
-    <div class="card text-center ">
-        <div class="card-header">
-            Geoloc mon foodtruck
-        </div>
-        <div class="card-body">
-            <button class="btn btn-block btn-info">Go !</button>
-        </div>
-        </div>
-    </div>
+        <div class="col p-3">
+            <div class="card text-center ">
+                <div class="card-header">
+                    Geoloc mon foodtruck
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-block btn-info">Go !</button>
+                </div>
+                </div>
+            </div>
 
-<pre>
-<?php
-/** 
-*foreach(get_users() as $v){
-*    echo $v["username"] . "\n";
-*}
-*/
-
-?>
-</pre>
-
-</div>
+        </div>
 
 
 
