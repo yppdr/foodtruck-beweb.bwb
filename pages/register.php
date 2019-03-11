@@ -1,6 +1,6 @@
 <?php
 
-require 'lib/password.php';
+require 'lib/psw.php';
 
 include './fun/config.php';
  
@@ -27,10 +27,9 @@ if(isset($_POST['register'])){
         die('That username already exists!');
     }
     
-    $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
+    $passwordHash = hash_me($pass);
     $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
     $stmt = $dbh->prepare($sql);
-   
     $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password', $passwordHash);
 
